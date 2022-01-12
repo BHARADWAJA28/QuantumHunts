@@ -1,28 +1,94 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
-body{
-padding-left: 10%;
-padding-right: 10%;
-background-color:#FAFBFE ;
-align-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito+Sans:wght@200&display=swap');
+.navbar.bg-light {
+  background-color: #6e49de !important;
 }
-body div h5{
-    color:#536DE6;
-    font-family:bloom-reg, "Open Sans", sans-serif, Arial, Nunito;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 16.5px;
-    letter-spacing: 1.2px;
+.btn-danger{
+background:#e1eaf2; 
+color:black;
+border-color: #e1eaf2;
+border-radius: 40px;
+}
+.btn-danger:hover {
+     color: black;
+     background-color: #e1eaf2;
+     border-color: #e1eaf2;
+ }
+.topnav {
+  background-color: #e1eaf2;
+  overflow: hidden;
+  min-height: 48px !important;
+  height: 48px !important;
+  max-height: 48px !important;  
+  text-align: center;
+  stop-color: #007BFE;
+  padding-top: 10px;
+}
+.topnav a {
+  color: #6e49de;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.topnav a.active {
+  color: white;
+}
+.btn-primary {
+  background: #6e49de;
+  border-color: #6e49de;
+  color: #fff;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #6e49de;
+  border-color: #6e49de;
+}
+.btn-info {
+display: inline-block;
+  background: #6e49de;
+  border-color: #6e49de;
+  color: #fff;
+  border-radius: 40px;
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: #6e49de;
+  border-color: #6e49de;
+}
+.topnav2 {
+background-color: #e0e4fa;
+overflow: hidden;
+}
+.signup{
+  margin-bottom: 6px;
+}
+.topnav2 a {
+float: right;
+color: #000000;
+text-align: center;
+text-decoration: none;
+font-size: 12px;
+}
+.topnav2 .active{
+  padding: 10px 11px;
+}
+.topnav2 .active:hover {
+background-color: #ffffff;
+color: black;
+border-radius: 10px;
+
 }
 .colour{
-    background-color:#4768fa;
+    background-color:#6E49DE;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 30px;
-    border-color:4768fa ;
+    border-color: #6E49DE;
 }
 .secondcolumn{
     padding-left: 20%;
-    padding-top: 10%;
     color: #6c757d;
     background-color: #0000;
     font-family:bloom-reg, "Open Sans", sans-serif, Arial, Nunito;
@@ -31,6 +97,18 @@ body div h5{
     margin:0px 0px 6px;
 
 }
+.profilecard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 body div h2{
     text-align:left;
     color: #323a46;
@@ -54,7 +132,6 @@ body div p{
     width: 50%;
   }
   .row-1:after {
-    content: "";
     display: table;
     clear: both;
   }
@@ -63,6 +140,11 @@ body div p{
     width: 33.33%;
     padding:auto;
     
+  }
+  .row-1{
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #536de6;
   }
   .row-2:after {
     content: "";
@@ -79,7 +161,13 @@ text-align: center;
 .divborders{
   border-radius: 10px;
   background-color: rgb(246, 253, 239);
-  text-align:;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 20px;
+  
+}
+.divborders h5{
+  color:#536DE6;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -88,18 +176,6 @@ text-align: center;
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-.body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Hind', sans-serif;
-  background: #fff;
-  color: #4d5974;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
 }
 .container {
   margin: 0 auto;
@@ -114,9 +190,6 @@ h3 {
 }
 .accordion a {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -150,7 +223,7 @@ h3 {
   right: 1rem;
   font-size: 1rem;
   color: #7288a2;
-  padding: 5px;
+  padding: 4px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 50%;
@@ -188,23 +261,41 @@ h3 {
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
 }
-      /* pricing */
-/* section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-} */
+.container2{
+  border-radius: 30px;
+  border:none;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(253, 246, 231);
+  padding-left: 10%;
+  padding-right: 10%;
 
+}
+.col-lg-4 {
+  float: left;
+  width: 33.33%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 992px) {
+.pricing .card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+      
+.pricing .card:hover .btn {
+  opacity: 1;
+}
 .pricing .card {
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
-
-.pricing hr {
-  margin: 1.5rem 0;
-}
-
 .pricing .card-price {
   font-size: 0.7rem;
   padding-left: 5%;
@@ -216,24 +307,60 @@ h3 {
   text-align:justify;
   padding-left: 5%;
   padding-top: 5%;
-  
-  
 }
-
-.pricing .card-price .period {
-  font-size: 0.8rem;
-}
-
 .pricing ul li {
   margin-bottom: 1rem;
 }
-.pricing .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-  
+.atn{
+  color:#536DE6;
+    font-family:bloom-reg, "Open Sans", sans-serif, Arial, Nunito;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16.5px;
+    letter-spacing: 1.2px;
+}
+.lead{
+  color: #6c757d;
+  background-color: #0000;
+  font-family:bloom-reg, "Open Sans", sans-serif, Arial, Nunito;
+  font-size:15px;
+  font-weight:300;
+  margin:0px 0px 6px;
+}
+.d-grid{
+  border-radius: 40px;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+}
+.case-study .content p {
+  font-size: 16px;
+  color: #858481;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.case-study-content {
+  padding: left 155px;
+  padding-bottom: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+.bg-light{
+  border-color: wheat
+}
+.title{
+  color:#536DE6;
+    font-family:bloom-reg, "Open Sans", sans-serif, Arial, Nunito;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16.5px;
+    letter-spacing: 1.2px;
+}
+footer {
+  background: #2e2f30;
+  padding-left:185px;
+  padding-bottom: 3px;
+  font-family:"Josefin Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
